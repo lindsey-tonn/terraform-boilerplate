@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 
 variable "aws_s3_bucket_name" {
-  default     = "fake-template-bucket"
+  default     = "changed-name"
   description = "the name of bucket"
 }
 
@@ -25,17 +25,17 @@ variable "aws_s3_bucket_tags" {
 
 # NETWORK
 variable "vpc_cidr" {
-  default     = "10.20.0.0/16"
+  default     = "10.30.0.0/16"
   description = "the vpc range"
 }
 
 variable "public_subnet_cidr" {
-  default     = "10.20.0.0/24"
+  default     = "10.30.0.0/24"
   description = "the range of subnet public"
 }
 
 variable "private_subnet_cidr" {
-  default     = "10.20.1.0/24"
+  default     = "10.30.1.0/24"
   description = "the range of subnet private"
 }
 
